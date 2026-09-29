@@ -1,7 +1,7 @@
 
 void procesoLecturaPh(){
   int analogValue = analogRead(PH_PIN);  // valor entre 0 y 1023
-  float pHLeidoActual =  map(analogValue, 0, 1023, 0.0, 14.0);
+  float pHLeidoActual =  map(analogValue, 0, 1023, 14.0, 0.0);
   
 
   Serial.print("Analog: ");
